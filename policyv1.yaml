@@ -22,21 +22,8 @@ Rules:
       - \s*(-----BEGIN OPENSSH PRIVATE KEY-----)
       - \s*(-----BEGIN PGP PRIVATE KEY BLOCK-----)
 
-  - name: Compliant module source
-    id: 5
-    description: In non-development environment modules should not be sourced locally nor from git
-    error: This breach blocks your deployment on production environments
-    type: scan
-    solution: "\n\tSource your modules from their latest version on artifactory \n\tMore info at https://XXX"
-    environment: prod
-    fatal: true
-    enforcement: false
-    patterns:
-      - source\s*.*\.git"
-      - \s+source\s*=\s*"((?!https\:).)
-
   - name: Hardcoded ids on code or variables
-    id: 7
+    id: 2
     description: Refrain from hardcoding resource ids per environment
     solution: Capture them dynamically from data lookups or module outputs
     error: This breach blocks your code promotion between environments
@@ -67,7 +54,7 @@ Rules:
       - ("ami-)
 
   - name: Sub-optimal parameter on Module/Resource
-    id: 8
+    id: 3
     description: Module/Resource is configured with a sub-optimal parameter
     solution: Tune the parameters to a more specific/recommended value
     environment: all
