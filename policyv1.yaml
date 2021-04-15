@@ -26,7 +26,7 @@ Rules:
     id: 2
     description: Refrain from hardcoding resource ids per environment
     solution: Capture them dynamically from data lookups or module outputs
-    error: This breach blocks your code promotion between environments
+    error: This breach blocks your code from being reusable
     type: scan
     fatal: true
     environment: all
