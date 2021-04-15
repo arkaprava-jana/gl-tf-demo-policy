@@ -30,7 +30,7 @@ Rules:
     type: scan
     fatal: true
     environment: all
-    enforcement: true
+    enforcement: false
     patterns:
       - (subnet_ids\s*=\s*\[\s*"\$\{v)
       - (subnet_ids\s*=\s*\[\s*"[s])
