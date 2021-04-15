@@ -42,7 +42,7 @@ Rules:
     error: This breach blocks your code promotion between environments
     type: scan
     fatal: true
-    environment: dev
+    environment: all
     enforcement: true
     patterns:
       - (subnet_ids\s*=\s*\[\s*"\$\{v)
