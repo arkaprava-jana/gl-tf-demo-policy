@@ -28,7 +28,7 @@ Rules:
     solution: Capture them dynamically from data lookups or module outputs
     error: This breach blocks your code from being reusable
     type: scan
-    fatal: true
+    fatal: false
     environment: all
     enforcement: false
     patterns:
