@@ -51,6 +51,7 @@ Rules:
       - ("subnet-)
       - ("sg-)
       - ("vpc-)
+      - ("ami-)
 
   - name: Sub-optimal parameter on Module/Resource
     id: 3
